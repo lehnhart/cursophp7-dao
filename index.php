@@ -2,12 +2,14 @@
 
 require_once ("config.php");
 
+/* -> Seleciona todos os usuários do banco de dados
+
 $sql = new Sql();
 
 $usuarios = $sql->select("SELECT * FROM tb_usuarios");
 
 echo json_encode($usuarios);
-
+*/
 
 
 
@@ -15,9 +17,9 @@ echo json_encode($usuarios);
 
 // -> Carrega um usuário
 
-//$root = new Usuario();
-//$root->loadById(4);
-//echo $root;
+$root = new Usuario();
+$root->loadById(2);
+echo $root;
 
 
 // -> Carrega uma lista de usuários
